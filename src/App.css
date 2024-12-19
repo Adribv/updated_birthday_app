@@ -1,0 +1,53 @@
+.App {
+  text-align: center;
+  font-family: Arial, sans-serif;
+}
+
+.App-header {
+  padding: 20px;
+  color: #333;
+}
+
+.total-collected {
+  font-weight: bold;
+}
+
+.list-group-item {
+  background-color: #f8f9fa;
+  margin-bottom: 10px;
+  border-radius: 8px;
+}
+/* Mobile-Friendly Input and Button Styling */
+input.form-control, button.btn {
+  font-size: 1.2em; /* Larger text size for visibility */
+}
+
+button.btn {
+  padding: 12px; /* Larger clickable area for better usability on mobile */
+}
+
+/* Adjustments for Small Screens */
+@media (max-width: 768px) {
+  .contribution-form input,
+  .contribution-form button {
+    margin-bottom: 15px;
+    width: 100%;
+  }
+  
+  .list-group-item {
+    padding: 15px;
+    flex-direction: column;
+    align-items: flex-start;
+  }
+
+  .list-group-item button {
+    width: 100%;
+    margin-bottom: 10px;
+  }
+  
+  .list-group-item h5,
+  .list-group-item p {
+    font-size: 1.1rem;
+    margin-bottom: 5px;
+  }
+}
